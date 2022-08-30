@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./reset.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <main>
+    <div class="card-div">
+      <div class="card card-front">
+        <img class="card-logo" src="./images/card-logo.svg" alt="Card Logo">
+        <p class="card-number-field">1234 5678 9123 0000</p>
+        <div class="card-front-bottom">
+          <p class="cardholder-field">Jane Appleseed</p>
+          <p class="exp-date-field"><span data-js="exp-date-MM-field">00</span>/<span data-js="exp-date-YY-field">0000</span></p>
+        </div>
+      </div>
+      <div class="card card-back">
+        <p class="cvc-field">123</p>
+      </div>
+    </div>
+    <div class="completed-div">
+      <img src="./images/icon-complete.svg" alt="Completed Icon.">
+      <div class="completed-message">
+        <h2 class="completed-title">Thank you!</h2>
+        <p class="completed-p">We've added your card details</p>
+      </div>
+      <button class="completed-button" type="button">Continue</button>
+    </div>
+    <div class="form-div">
+      <form class="form-field">
+        <div class="form-section">
+          <label for="cardholder">Cardholder Name</label>
+          <input class="form-input" data-js="cardholder" name="cardholder" type="text" placeholder=" e.g. Jane Appleseed">
+          <span class="error cardholder-error"></span>
+        </div>
+        <div class="form-section">
+          <label for="card-number">Card Number</label>
+          <input class="form-input" data-js="card-number" name="card-number" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+          <span class="error card-number-error"></span>
+        </div>
+        <div class="form-bottom">
+          <div class="form-bottom-div">
+              <label for="exp-date">Exp. Date</label>
+              <div class="exp-date-div">
+                <input class="form-input exp-date" data-js="exp-date-MM" name="exp-date" type="text" placeholder="MM" max="12" maxlength="2">
+                <input class="form-input exp-date" data-js="exp-date-YY" name="exp-date" type="text" placeholder="YYYY" min="2022" max="2050" maxlength="4">
+                <span class="error exp-date-error"></span>
+              </div>
+          </div>
+          <div class="form-bottom-div">
+            <label class="" for="cvc">CVC</label>
+            <input class="form-input cvc" data-js="cvc" name="cvc" type="text" placeholder="e.g. 123" maxlength="3">
+            <span class="error cvc-error"></span>
+          </div>
+        </div>
+        <button class="form-button" type="submit">Confirm</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Completed state start -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Raphael Righetti</a>.
+  </div>
+  <script src="./js.js"></script>
+</body>
+</html>
