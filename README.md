@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FrontEnd Mentor Solution](https://www.frontendmentor.io/solutions/interactive-card-details-form-vanilla-js-3VONoiBuI4)
+- Live Site URL: [Live Site](https://raphaelrighetti.github.io/interactive-card-details-form-frontend-mentor/)
 
 ## My process
 
