@@ -17,6 +17,14 @@ const cardNumberError = document.querySelector('.card-number-error');
 const expDateError = document.querySelector('.exp-date-error');
 const cvcError = document.querySelector('.cvc-error');
 
+function removeFormData() {
+  cardNumber.value = '';
+  cardHolder.value = '';
+  expDateMM.value = '';
+  expDateYY.value = '';
+  cvc.value = '';
+}
+
 function showThankYou() {
   formDiv.classList.add('finished');
   completedDiv.classList.add('active');
@@ -25,6 +33,7 @@ function showThankYou() {
 function unshowThankYou() {
   formDiv.classList.remove('finished');
   completedDiv.classList.remove('active');
+  removeFormData();
 }
 
 function setCardNumberString(value) {
